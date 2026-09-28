@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fronteira.co</title>
+    <link rel="stylesheet" href="../style/output.css" />
+
+    <!-- FONTES E ÍCONES: adicione no HEAD do HTML -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#111111]">
+    <header
+      class="absolute top-0 left-0 z-50 w-full flex items-center justify-between px-8 py-4 8 text-white"
+    >
+      <a href="#" class="text-2xl font-bold tracking-tight"> FRONTEIRA</a>
+
+      <nav>
+        <ul class="flex items-center gap-12">
+          <a
+            href="#"
+            class="border-b border-white pb-1 text-[11px] font-medium tracking-[0.18em]"
+            >INICIO</a
+          >
+          <a
+            href="#"
+            class="text-[11px] font-medium tracking-[0.18em] transition-opacity hover:opacity-60"
+            >PRODUTOS</a
+          >
+          <a
+            href="#"
+            class="text-[11px] font-medium tracking-[0.18em] transition-opacity hover:opacity-60"
+            >SOBRE</a
+          >
+          <a
+            href="#"
+            class="text-[11px] font-medium tracking-[0.18em] transition-opacity hover:opacity-60"
+            >CONTATO</a
+          >
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-5">
+        <button
+          class="h-5 w-5 stroke-[1.5] transition-opacity hover:opacity-60"
+          data-lucide="user"
+        ></button>
+        <button
+          class="h-5 w-5 stroke-[1.5] transition-opacity hover:opacity-60"
+          data-lucide="search"
+        ></button>
+        <button
+          class="h-5 w-5 stroke-[1.5] transition-opacity hover:opacity-60"
+          data-lucide="shopping-cart"
+        ></button>
+      </div>
+    </header>
+
+    <main>
+      <!--hero-->
+      <section class="relative h-[540px] w-full overflow-hidden">
+        <img
+          src="../img/imgPRINCIPAL.png"
+          class="absolute inset-0 w-full h-full object-cover"
+          alt="Imagem de destaque da marca Fronteira.co"
+        />
+
+        <!-- CAMADA ESCURA -->
+        <div class="absolute inset-0 bg-black/35"></div>
+
+        <!-- CONTEÚDO DO HERO -->
+        <div
+          class="relative z-10 flex flex-col justify-center items-start h-full px-14 pt-16 text-white"
+        >
+          <span class="font-mono text-xs tracking-[0.2em]">
+            ROUPAS QUE VÃO ALÉM DO ÓBVIO.</span
+          >
+          <p class="font-mono text-xs tracking-[0.2em] leading-relaxed mt-1">
+            ENTRE O QUE É REAL<br />
+            E O QUE AINDA VAI SER.
+          </p>
+
+          <div class="flex items-center gap-5 mt-9">
+            <a
+              href="#"
+              class="flex items-center gap-3 bg-white text-black px-6 py-3 font-mono text-xs font-semibold tracking-wider transition duration-300 hover:bg-neutral-300"
+              >VER PRODUTOS <span>→</span></a
+            >
+            <a
+              href="#"
+              class="flex items-center gap-3 border border-white/70 bg-transparent text-white px-6 py-3 font-mono text-xs tracking-wider transition duration-300 hover:bg-white hover:text-black"
+              >SOBRE A MARCA <span>→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO PRODUTOS -->
+      <section
+        class="products relative isolate overflow-hidden bg-[#111111] px-[5.5%] py-10 text-[#e8e8e8] lg:py-[42px]"
+      >
+        <!-- CONTEÚDO -->
+        <div
+          class="mx-auto grid max-w-[1500px] grid-cols-1 gap-10 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-[24px] xl:grid-cols-[250px_minmax(0,1fr)]"
+        >
+          <!-- INTRODUÇÃO -->
+          <div class="products-intro flex flex-col items-start">
+            <span
+              class="mb-[10px] font-['Roboto_Mono'] text-[11px] tracking-[1.5px]"
+            >
+              DESTAQUES
+            </span>
+
+            <div class="relative w-fit">
+              <h2 class="font-['Anton'] text-[47px] leading-[1.06]">
+                PEÇAS<br />
+                RECENTES
+              </h2>
+
+              <!-- ELEMENTO GRÁFICO -->
+              <img
+                src="../img/Logo.png"
+                alt=""
+                class="absolute w-16 h-auto top-[-50px] left-[147px] pointer-events-none brightness-0 invert"
+              />
+            </div>
+            <p
+              class="mt-[19px] font-['Roboto_Mono'] text-[10px] leading-[1.45] tracking-[0.1px] text-[#dedede]"
+            >
+              Modelos que representam<br />
+              o que a gente acredita:<br />
+              liberdade, atitude e autenticidade.
+            </p>
+
+            <a
+              href="#"
+              class="button mt-[25px] inline-flex h-[35px] min-w-[144px] items-center justify-center gap-[15px] border border-[#aaa] px-5 font-['Roboto_Mono'] text-[10px] tracking-[0.6px] transition-all duration-300 hover:bg-white hover:text-black"
+            >
+              VER TODOS
+              <span class="text-[16px]">→</span>
+            </a>
+          </div>
+
+          <!-- GRID DE PRODUTOS -->
+          <div
+            class="products-grid grid min-w-0 grid-cols-2 gap-x-[14px] gap-y-8 md:grid-cols-4"
+          >
+            <!-- PRODUTO 1 -->
+            <article class="product-card min-w-0">
+              <div
+                class="product-image aspect-[153/199] w-full overflow-hidden bg-[#292929]"
+              >
+                <img
+                  src="../img/EXEMPLO4Moletom.jpg"
+                  alt="Moletom Fronteira"
+                  class="h-full w-full object-cover grayscale transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+
+              <h3
+                class="mt-[10px] font-['Roboto_Mono'] text-[10px] font-medium leading-tight"
+              >
+                MOLETOM FRONTEIRA
+              </h3>
+
+              <div class="mt-[3px] flex items-center justify-between gap-1">
+                <span class="font-['Roboto_Mono'] text-[10px]">
+                  R$ 249,90
+                </span>
+
+                <button
+                  type="button"
+                  aria-label="Adicionar Moletom Fronteira ao carrinho"
+                  class="flex h-[29px] w-[29px] shrink-0 items-center justify-center border border-[#777] transition-colors duration-300 hover:bg-white hover:text-black"
+                >
+                  <i data-lucide="shopping-cart" class="h-[15px] w-[15px]"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- PRODUTO 2 -->
+            <article class="product-card min-w-0">
+              <div
+                class="product-image aspect-[153/199] w-full overflow-hidden bg-[#292929]"
+              >
+                <img
+                  src="../img/Exemplo1CAMISA.jpg"
+                  alt="Camiseta Oversized"
+                  class="h-full w-full object-cover grayscale transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+
+              <h3
+                class="mt-[10px] font-['Roboto_Mono'] text-[10px] font-medium leading-tight"
+              >
+                CAMISETA OVERSIZED
+              </h3>
+
+              <div class="mt-[3px] flex items-center justify-between gap-1">
+                <span class="font-['Roboto_Mono'] text-[10px]">
+                  R$ 129,90
+                </span>
+
+                <button
+                  type="button"
+                  aria-label="Adicionar Camiseta Oversized ao carrinho"
+                  class="flex h-[29px] w-[29px] shrink-0 items-center justify-center border border-[#777] transition-colors duration-300 hover:bg-white hover:text-black"
+                >
+                  <i data-lucide="shopping-cart" class="h-[15px] w-[15px]"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- PRODUTO 3 -->
+            <article class="product-card min-w-0">
+              <div
+                class="product-image aspect-[153/199] w-full overflow-hidden bg-[#292929]"
+              >
+                <img
+                  src="../img/EXEMPLO2Calca.jpg"
+                  alt="Calça Wide Leg"
+                  class="h-full w-full object-cover grayscale transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+
+              <h3
+                class="mt-[10px] font-['Roboto_Mono'] text-[10px] font-medium leading-tight"
+              >
+                CALÇA WIDE LEG
+              </h3>
+
+              <div class="mt-[3px] flex items-center justify-between gap-1">
+                <span class="font-['Roboto_Mono'] text-[10px]">
+                  R$ 199,90
+                </span>
+
+                <button
+                  type="button"
+                  aria-label="Adicionar Calça Wide Leg ao carrinho"
+                  class="flex h-[29px] w-[29px] shrink-0 items-center justify-center border border-[#777] transition-colors duration-300 hover:bg-white hover:text-black"
+                >
+                  <i data-lucide="shopping-cart" class="h-[15px] w-[15px]"></i>
+                </button>
+              </div>
+            </article>
+
+            <!-- PRODUTO 4 -->
+            <article class="product-card min-w-0">
+              <div
+                class="product-image aspect-[153/199] w-full overflow-hidden bg-[#292929]"
+              >
+                <img
+                  src="../img/EXEMPLO3Bone.jpg"
+                  alt="Boné Fronteira"
+                  class="h-full w-full object-cover grayscale transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+
+              <h3
+                class="mt-[10px] font-['Roboto_Mono'] text-[10px] font-medium leading-tight"
+              >
+                BONÉ FRONTEIRA
+              </h3>
+
+              <div class="mt-[3px] flex items-center justify-between gap-1">
+                <span class="font-['Roboto_Mono'] text-[10px]"> R$ 89,90 </span>
+
+                <button
+                  type="button"
+                  aria-label="Adicionar Boné Fronteira ao carrinho"
+                  class="flex h-[29px] w-[29px] shrink-0 items-center justify-center border border-[#777] transition-colors duration-300 hover:bg-white hover:text-black"
+                >
+                  <i data-lucide="shopping-cart" class="h-[15px] w-[15px]"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="about grid w-full min-h-[420px] grid-cols-1 lg:grid-cols-2 bg-[url('../img/texturaAbout.png')] bg-cover bg-center"
+      >
+        <!-- IMAGEM -->
+        <div class="about-image relative min-h-[400px] overflow-hidden">
+          <img
+            src="../img/imagemABOUT.png"
+            alt="Estilo streetwear da FRONTEIRA"
+            class="absolute inset-0 h-full w-full object-cover object-center"
+          />
+        </div>
+
+        <!-- CONTEÚDO -->
+        <div
+          class="about-content relative flex flex-col justify-center overflow-hidden bg-[#bcbcbc]/85 bg-[url('../img/texturaAbout3.png')] bg-cover bg-center px-10 py-16 text-black [-webkit-text-stroke:0.25px_black] lg:px-12 lg:py-12"
+        >
+          <!-- SOBRE A MARCA -->
+          <span class="mb-3 font-mono text-[12px] tracking-[0.16em]">
+            SOBRE A FRONTEIRA
+          </span>
+
+          <!-- TÍTULO -->
+          <h2
+            class="mb-5 font-['Anton'] text-[43px] leading-[1.05] tracking-[-0.02em] lg:text-[46px]"
+          >
+            A GENTE EXISTE <br />
+            NA FRONTEIRA.
+          </h2>
+
+          <!-- DESCRIÇÃO -->
+          <p
+            class="max-w-[370px] font-mono text-[11px] leading-[1.55] tracking-[0.025em] text-black"
+          >
+            A FRONTEIRA é uma marca independente <br />
+            que nasceu da vontade de criar roupas <br />
+            com propósito. Mais do que estilo, a gente <br />
+            veste atitude, história e resistência.
+
+            <br /><br />
+
+            Inspirada na vida real, nas ruas, na cultura <br />
+            e nas pessoas que não se encaixam, a FRONTEIRA <br />
+            é pra quem entende que o limite é só mais<br />
+            um ponto de partida.
+          </p>
+
+          <!-- BOTÃO -->
+          <a
+            href="#"
+            class="mt-6 flex w-fit items-center gap-4 border border-black px-6 py-3 font-mono text-[11px] tracking-[0.08em] transition-all duration-300 hover:bg-white"
+          >
+            CONHEÇA MAIS
+
+            <span class="text-lg leading-none">→</span>
+          </a>
+        </div>
+      </section>
+
+      <img
+        src="../img/Logo.png"
+        alt="Símbolo FRONTEIRA"
+        class="absolute z-10 left-[7%] w-[75px] h-auto m-8 max-lg:hidden brightness-0 invert"
+      />
+
+      <section
+        class="newsletter relative w-full min-h-[138px] bg-[url('../img/fundo-newsletter.png')] bg-bottom flex items-center overflow-hidden bg-[#141414] text-white"
+      >
+        <!-- Imagem de fundo -->
+        <div
+          class="newsletter-content relative z-10 w-full flex items-center justify-between px-14"
+        ></div>
+
+        <!-- Sobreposição escura -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Conteúdo -->
+        <div
+          class="newsletter-content relative z-10 w-full flex items-center justify-between gap-10 px-[28.5%] py-8 max-lg:px-12 max-md:flex-col max-md:items-start max-md:px-6"
+        >
+          <!-- Texto -->
+          <div class="flex flex-col gap-2 shrink-0">
+            <span class="font-mono text-[10px] tracking-[1.5px] text-white/80">
+              ENTRE NO NOSSO MUNDO
+            </span>
+
+            <h2
+              class="font-mono text-[15px] leading-[22px] tracking-[-0.5px] font-normal"
+            >
+              RECEBA NOVIDADES, LANÇAMENTOS <br />
+              E CONTEÚDOS EXCLUSIVOS.
+            </h2>
+          </div>
+
+          <!-- Formulário -->
+          <form
+            class="flex items-center gap-3 shrink-0 max-sm:flex-col max-sm:items-stretch max-sm:w-full"
+          >
+            <input
+              type="email"
+              placeholder="Seu e-mail"
+              required
+              class="w-[198px] h-[34px] border border-white/60 bg-[#151515]/80 px-3 text-[11px] font-mono text-white placeholder:text-white/70 outline-none focus:border-white max-sm:w-full"
+            />
+
+            <button
+              type="submit"
+              class="h-[34px] px-4 bg-[#e5e5e5] text-[#171717] font-mono text-[11px] font-bold tracking-[0.5px] whitespace-nowrap hover:bg-white transition-colors"
+            >
+              INSCREVER →
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="relative w-full border-t-[2px] border-s-gray-400 bg-[#111111] text-white overflow-hidden">
+        <!-- Textura de fundo -->
+        <div
+          class="absolute inset-0 bg-[url('../img/textura-footer.png')] bg-cover bg-center opacity-20 pointer-events-none"
+        ></div>
+
+        <!-- Conteúdo -->
+        <div class="relative z-10 mx-auto flex max-w-[1100px] flex-col items-center px-6 pt-8 pb-7 text-center sm:px-10">
+          <!-- Linha superior -->
+          <div
+            class="flex w-full flex-row flex-wrap items-center justify-center gap-x-8 gap-y-5 max-md:flex-col"
+          >
+            <!-- Logo -->
+            <a
+              href="index.html"
+              class="font-sans text-[19px] font-semibold tracking-[-0.8px] transition-opacity hover:opacity-70"
+            >
+              FRONTEIRA<sup class="text-[7px] ml-[1px]">®</sup>
+            </a>
+
+            <!-- Navegação -->
+            <nav class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 border-y border-white/15 px-6 py-3 max-sm:gap-x-5 max-sm:px-3">
+              <a
+                href="#inicio"
+                class="font-mono text-[9px] tracking-[1px] text-white/80 transition-colors hover:text-white"
+              >
+                FAQ
+              </a>
+
+              <a
+                href="#produtos"
+                class="font-mono text-[9px] tracking-[1px] text-white/80 transition-colors hover:text-white"
+              >
+                PRODUTOS
+              </a>
+
+              <a
+                href="#sobre"
+                class="font-mono text-[9px] tracking-[1px] text-white/80 transition-colors hover:text-white"
+              >
+                SOBRE
+              </a>
+
+              <a
+                href="#contato"
+                class="font-mono text-[9px] tracking-[1px] text-white/80 transition-colors hover:text-white"
+              >
+                CONTATO
+              </a>
+            </nav>
+
+            <!-- Redes sociais e carrinho -->
+            <div class="flex items-center gap-5 text-white/80">
+              <!-- TikTok -->
+              <a
+                href="https://tiktok.com/"
+                aria-label="TikTok"
+                class="transition-colors hover:text-white"
+              >
+                <svg
+                  class="w-[16px] h-[16px]"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16.7 2c.2 2.1 1.4 3.4 3.3 3.5V9c-1.5.1-2.9-.4-4-1.2v7.4c0 4-4.4 6.4-7.7 4.2-3.1-2.1-2.6-7 .9-8.5 1-.4 2-.5 3-.3v3.5c-2.4-.8-3.9 1.9-2.2 3.3 1.2 1 3 .3 3-1.2V2h3.7z"
+                  />
+                </svg>
+              </a>
+
+              <!-- X -->
+              <a
+                href="https://x.com/"
+                aria-label="X"
+                class="transition-colors hover:text-white"
+              >
+                <svg
+                  class="w-[15px] h-[15px]"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.3l7.3-8.5L1.9 2h6.5l4.5 6.8L18.9 2zm-1.1 18h1.7L7.5 3.9H5.7z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="https://instagram.com/"
+                aria-label="Instagram"
+                class="transition-colors hover:text-white"
+              >
+                <svg
+                  class="w-[17px] h-[17px]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Linha inferior -->
+          <div
+            class="mt-7 flex w-full flex-col items-center gap-2 border-t border-white/10 pt-4"
+          >
+            <p class="font-mono text-[8px] tracking-[0.2px] text-white/55">
+              © 2025 FRONTEIRA. TODOS OS DIREITOS RESERVADOS.
+            </p>
+
+            <p class="font-mono text-[8px] tracking-[0.2px] text-white/55">
+              FEITO POR PESSOAS REAIS. PARA PESSOAS REAIS.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
